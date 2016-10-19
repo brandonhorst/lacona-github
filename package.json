@@ -1,0 +1,55 @@
+{
+  "name": "lacona-github",
+  "version": "1.0.0",
+  "description": "Lacona Addon to allow for interaction with github (open, fork, clone, etc)",
+  "main": "lib/index.js",
+  "lacona": {
+    "title": "Github",
+    "description": "Open, fork, clone, etc. public Github Repositories",
+    "config": "config.json"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "lacona",
+    "lacona-addon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonhorst/lacona-github.git"
+  },
+  "dependencies": {
+    "elliptical": "^2.0.0",
+    "express": "^4.14.0",
+    "lacona-api": "^1.4.0",
+    "lacona-phrases": "^1.0.1",
+    "lacona-source-helpers": "^2.0.0",
+    "lodash": "^4.15.0",
+    "node-fetch": "^1.6.3",
+    "opn": "^4.0.2",
+    "parse-link-header": "^0.4.1",
+    "randomstring": "^1.1.5"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-preset-es2015-node": "^6.1.1",
+    "rimraf": "^2.5.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node"
+    ],
+    "plugins": [
+      "transform-async-to-generator",
+      "syntax-async-functions",
+      "transform-react-jsx"
+    ]
+  }
+}

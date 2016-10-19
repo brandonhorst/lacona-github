@@ -36,6 +36,5 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-
-# Lacona Additions
-lib
+# Additional Lacona ignores
+src
