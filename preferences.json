@@ -1,0 +1,8 @@
+{
+  "authentication": {
+    "type": "auth",
+    "method": "oauth2",
+    "initial_url": "https://github.com/login/oauth/authorize?client_id=6b627f2da43ff60f53ba&scope=repo&state=",
+    "description": "Sign in to Github to allow Lacona to access your repositories and perform actions on your behalf."
+  }
+}
